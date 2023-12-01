@@ -6,6 +6,8 @@ import 'package:login_app/src/constants/image_string.dart';
 import 'package:login_app/src/constants/sizes.dart';
 import 'package:login_app/src/constants/text_string.dart';
 import 'package:get/get.dart';
+import 'package:login_app/src/features/authentication/screens/login/login_screen.dart';
+import 'package:login_app/src/features/authentication/screens/signup/signup_screen.dart';
 import '../../../../common_widget/fade_in_animation/fade_in_animation_controller.dart';
 
 class welcome extends StatelessWidget {
@@ -17,10 +19,10 @@ class welcome extends StatelessWidget {
     controller.startAnimation();
     var height = MediaQuery.of(context).size.height;
     var brightness=MediaQuery.of(context).platformBrightness;
-    final isDarkMode= brightness==Brightness.dark;
+    final isDarkMode = brightness==Brightness.dark;
 
     return Scaffold(
-      backgroundColor: isDarkMode ? tSecondaryColor:tPrimaryColor,
+      backgroundColor:isDarkMode ? tSecondaryColor:tPrimaryColor,
       body: Stack(
         children: [
           TFadeInAnimation(
@@ -55,7 +57,7 @@ class welcome extends StatelessWidget {
                     children: [
                       Expanded(
                         child: OutlinedButton(
-                          onPressed: () {},
+                          onPressed: ()=>Get.to(()=>const LoginScreen()),
                           child: Text(tLogin.toUpperCase()),
                         ),
                       ),
@@ -64,7 +66,7 @@ class welcome extends StatelessWidget {
                       ),
                       Expanded(
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed:()=>Get.to(()=>const SignUpScreen()),
                           child: Text(tSignUp.toUpperCase()),
                         ),
                       ),

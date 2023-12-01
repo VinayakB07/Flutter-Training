@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:login_app/src/common_widget/fade_in_animation/fade_in_animation_model.dart';
-import '../../constants/image_string.dart';
 import 'fade_in_animation_controller.dart';
 
 class TFadeInAnimation extends StatelessWidget {

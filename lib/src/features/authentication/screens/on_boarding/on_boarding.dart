@@ -2,13 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
 import 'package:get/get.dart';
 import 'package:login_app/src/constants/colors.dart';
-import 'package:login_app/src/constants/image_string.dart';
-import 'package:login_app/src/constants/sizes.dart';
 import 'package:login_app/src/features/authentication/controllers/on_bording_controller.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import 'package:login_app/src/constants/text_string.dart';
-import 'package:login_app/src/features/authentication/models/on_boarding_model.dart';
-import 'package:login_app/src/features/authentication/screens/on_boarding/on_boarding_page.dart';
+
 
 class OnBoardingScreen extends StatelessWidget {
    OnBoardingScreen({super.key});

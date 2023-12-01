@@ -66,6 +66,7 @@ flutter:
      - assets/images/splash_top_icon.png
      - assets/images/onbording_images/
      - assets/images/welcome_images/welcome_screen_image.png
+     - assets/logos/google_logo.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
